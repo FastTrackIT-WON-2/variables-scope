@@ -36,6 +36,16 @@ namespace VariableScope
             {
                 // here is another block scope
             }
+
+            Console.WriteLine("----------------");
+
+            for (int k = 0; k < 3; k++)
+            {
+                Console.WriteLine(k);
+            }
+
+            // for variable exists only in block scope!
+            // Console.WriteLine(k);
         }
     }
 }
