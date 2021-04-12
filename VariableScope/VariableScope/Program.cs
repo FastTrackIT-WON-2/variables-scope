@@ -8,9 +8,11 @@ namespace VariableScope
         {
             // BlockScope();
 
-            int y = 10;
-            FunctionScope(y);
-            Console.WriteLine(y);
+            //int y = 10;
+            //FunctionScope(y);
+            //Console.WriteLine(y);
+
+            ClassScope();
         }
 
         private static void BlockScope()
@@ -75,6 +77,12 @@ namespace VariableScope
 
             Console.WriteLine("x=" + x);
             Console.WriteLine("y=" + y);
+        }
+
+        private static void ClassScope()
+        {
+            Person p = new Person();
+            p.SayHello();
         }
     }
 }
